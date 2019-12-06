@@ -28,14 +28,13 @@
     "url": "https://github.com/pengfeiWang/less-theme-generator-promise.git"
   },
   "files": [
-    "build/lib",
-    "build/index.js",
-    "build/LICENSE",
-    "build/README"
+    "lib/*",
+    "index.js",
+    "LICENSE",
+    "README"
   ],
   "scripts": {
-    "build": "tsc --lib es2015,dom --outDir build src/index.ts",
-    "predeploy": "cp package.json build/package.json && cp README.md build/README.md && cp LICENSE build/LICENSE",
+    "build": "tsc --lib es2015,dom --outDir ./ src/index.ts",
     "deploy": "npm publish"
   }
 }
