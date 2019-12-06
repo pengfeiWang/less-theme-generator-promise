@@ -8,7 +8,7 @@
     "less-bundle-promise",
     "bunlde-less"
   ],
-  "main": "build/index.js",
+  "main": "index.js",
   "engines": {
     "node": ">=0.10.0"
   },
@@ -17,9 +17,25 @@
     "ts-loader": "^4.2.0",
     "typescript": "^2.8.1"
   },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/pengfeiWang/less-theme-generator-promise/blob/master/LICENSE"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pengfeiWang/less-theme-generator-promise.git"
+  },
+  "files": [
+    "build/lib",
+    "build/index.js",
+    "build/LICENSE",
+    "build/README"
+  ],
   "scripts": {
     "build": "tsc --lib es2015,dom --outDir build src/index.ts",
-    "predeploy": "cp package.json build/package.json && cp README.md build/README.md",
+    "predeploy": "cp package.json build/package.json && cp README.md build/README.md && cp LICENSE build/LICENSE",
     "deploy": "npm publish"
   }
 }
