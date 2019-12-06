@@ -1,0 +1,26 @@
+{
+  "name": "less-theme-generator-promise",
+  "version": "0.0.1",
+  "description": "A package bundler for Less",
+
+  "keywords": [
+    "less",
+    "less-bundle",
+    "less-bundle-promise",
+    "bunlde-less"
+  ],
+  "main": "build/index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "ts-loader": "^4.2.0",
+    "typescript": "^2.8.1"
+  },
+  "scripts": {
+    "build": "tsc --lib es2015,dom --outDir build src/index.ts",
+    "predeploy": "cp package.json build/package.json && cp README.md build/README.md",
+    "deploy": "npm publish"
+  }
+}
