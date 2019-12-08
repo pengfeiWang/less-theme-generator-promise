@@ -2,7 +2,7 @@
 
 ```javascript
 var path = require('path');
-var bundle = require('less-bundle-promise');
+var bundle = require('less-theme-generator-promise');
 const themes = [ 'green.less', 'blue.less', 'yellow.less' ];
 
 themes.map(file => {
