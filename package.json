@@ -14,7 +14,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "ts-loader": "^4.2.0",
+    "ts-loader": "^9.4.2",
     "typescript": "^2.8.1"
   },
   "licenses": [
